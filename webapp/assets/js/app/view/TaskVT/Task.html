@@ -1,0 +1,11 @@
+<tr class="<%= item.cssClass %>">
+    <td><%= indx+1 %></td>
+    <td><%= item.status %></td>
+    <td><%= item.content %></td>
+    <td><%= item.formattedDate %></td>
+    <td><%= item.assignee.name %></td>
+    <td>
+        <button data-action="delete" type="button" class="btn-xs btn btn-danger">Delete</button>
+        <button data-action="complete" type="button" class="btn-xs btn btn-success">Complete</button>
+    </td>
+</tr>
