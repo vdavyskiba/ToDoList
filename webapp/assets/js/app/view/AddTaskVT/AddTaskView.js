@@ -1,6 +1,5 @@
 define(["text!view/AddTaskVT/AddTask.html", "text!view/AddTaskVT/AddTaskBtn.html", "text"], function(AddTask, AddTaskBtn){
 
-    //$('#myModal').modal('show')
     return {
         render : function(data){
             //_.each(data, function(item){});

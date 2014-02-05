@@ -1,14 +1,15 @@
-define(["GetTaskList", "controller/TaskVC", "controller/AddTaskVC"], function(getTaskList, TaskVC, AddTaskVC) {
+define(["controller/TaskListVC", "controller/AddTaskVC"], function(TaskListVC, AddTaskVC) {
     $(function() {
-        GetTaskList(function(data){
-            _.each(data, function(elem, indx){
-                TaskVC("#taskList", elem, indx);
-            });
 
+        var App = function(){
 
-        });
+            new TaskListVC("#taskList");
 
-        AddTaskVC("#controls", []);
+            new AddTaskVC("#controls", []);
+        };
+
+        return new App();
+
 
     });
 });
